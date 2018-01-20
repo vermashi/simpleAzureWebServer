@@ -1,0 +1,12 @@
+[Unit]
+Description=Just an HTTP server that runs from a data drive
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/drive1
+ExecStart=/usr/bin/python -m SimpleHTTPServer
+PreExecStart=/bin/sleep 30; /bin/lsblk > /drive1/lsblk.out;
+
+[Install]
+WantedBy=multi-user.target
