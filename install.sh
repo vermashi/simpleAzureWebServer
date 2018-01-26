@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sleep 30
 mkdir -p /drive1
 mount /drive1
 # Check that the disk is attached
