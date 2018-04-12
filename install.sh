@@ -26,5 +26,4 @@ if [ ! -f /etc/systemd/system/multi-user.target.wants/simpleserver.service ]; th
     systemctl enable simpleserver.service
 fi
 
-systemctl start simpleserver.service
-
+# systemctl start simpleserver.service
